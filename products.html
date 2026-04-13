@@ -2,10 +2,247 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- in mobile set initial zoom level of page to 100%, set site size to equal device size-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>Dr Nut</title>
 </head>
 <body>
-    
+        <h1 class="visually-hidden">Dr Nut Products</h1>
+        <div id="sticky-nav-con">
+        <header >
+            <div class="grid-con center-grid-con">
+                <nav id="main-nav" class="col-span-full m-col-start-7 m-col-end-12">
+                <h2 class="visually-hidden">Main Navigation</h2>
+                    <button id="button"></button>
+                    <div id="burger-con">
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="merch.html">Merch</a></li>
+                            <li><a href="#">About</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <div id="logo" class=" col-start-2 col-end-4 m-col-start-2 m-col-end-4">
+                    <img src="images/logo-white.svg" alt="Dr Nut Logo">
+                </div>
+            </div>
+        </header>
+        </div>
+
+    <main>
+        <section id="products-hero">
+            <div class="grid-con center-grid-con">
+                <h2 class="visually-hidden">Dr Nut Original Drinks</h2>
+                <div id="hero-image" class="col-span-full">
+                    <picture>
+                        <source srcset="images/hero-products-l.jpg" media="(min-width: 1200px)">
+                        <source srcset="images/hero-products-m.jpg" media="(min-width: 768px)" >
+                        <img src="images/hero-products-s.jpg" alt="People drinking Dr Nut">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section id="dr-nut-original">
+            <div class="grid-con center-grid-con">
+                <div id="can1" class="col-start-2 col-end-4 m-col-start-2 m-col-end-7">
+                    <img src="images/dr-nut-original.png" alt="dr-nut-original">
+                </div>
+
+                <div class="product-info col-span-full m-col-start-7 m-col-end-12">
+                    <h2>Dr Nut Original</h2>
+                    <p>
+                        The legend that started it all. Born in New Orleans with our classic almond formula. 100% natural ingredients for an intense, refreshing and crisp finish.
+                    </p>
+                    <div id="nutri-facts1">
+                        <h3>Nutrition Facts</h3>
+        
+                        <ul class="nutri-info">
+                            <li class="border-line">
+                                <span>Amount</span>
+                                <span>% Daily Value</span>
+                            </li>
+                            <li class="border-line">
+                                <span>Calories: 150cal</span>
+                            </li>
+                            <li class="border-line">
+                                <span>Fat: 0g</span>
+                                <span>0%</span>
+                            </li>
+                            <li class="border-line">
+                                <span>Sodium: 55mg</span>
+                                <span>2%</span>
+                            </li>
+                            <li class="border-line">
+                                <span>Total Carbohydrates: 40g</span>
+                                <span>14%</span>
+                            </li>
+                            <li class="border-line">
+                                <span>Sugar: 39g</span>
+                            </li>
+                            <li class="border-line">
+                                <span>Protein: 0g</span>
+                            </li>
+                        </ul>
+
+                        <p class="border-line">Ingredients: Carbonated Water, Sugar, Almond Concentrate, Caffeine, Sodium Benzoate, Citric Acid and Almond Extract.</p>
+
+                    </div>
+                    <a href="#" class="buy-now-btn">Buy Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="dr-nut-sugarfree">
+            <div class="grid-con center-grid-con">
+                <div id="can2" class="col-start-2 col-end-4 m-col-start-2 m-col-end-7">
+                    <img src="images/dr-nut-sugarfree.png" alt="dr-nut-original">
+                </div>
+
+                <div class="product-info col-span-full m-col-start-7 m-col-end-12">
+                    <h2>Dr Nut Sugarfree</h2>
+                    <p>
+                        All the flavor, zero sugar. We kept the iconic almond taste you love without the compromise. The full Dr Nut experience for those who want to keep it light.
+                    </p>
+                    <div id="nutri-facts2">
+                        <h3>Nutrition Facts</h3>
+        
+                        <ul class="nutri-info">
+                            <li class="border-line">
+                                <span>Amount</span>
+                                <span>% Daily Value</span>
+                            </li>
+                            <li class="border-line">
+                                <span>Calories: 0cal</span>
+                            </li>
+                            <li class="border-line">
+                                <span>Fat: 0g</span>
+                                <span>0%</span>
+                            </li>
+                            <li class="border-line">
+                                <span>Sodium: 60mg</span>
+                                <span>3%</span>
+                            </li>
+                            <li class="border-line">
+                                <span>Total Carbohydrates: 0g</span>
+                                <span>14%</span>
+                            </li>
+                            <li class="border-line">
+                                <span>Sugar: 0g</span>
+                            </li>
+                            <li class="border-line">
+                                <span>Protein: 0g</span>
+                            </li>
+                        </ul>
+
+                        <p class="border-line">Ingredients: Carbonated Water, Sugar, Almond Concentrate, Caffeine, Sodium Benzoate, Citric Acid and Almond Extract.</p>
+
+                    </div>
+                    <a href="#" class="buy-now-btn">Buy Now</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="dr-nut-zero">
+            <div class="grid-con center-grid-con">
+                <div id="can3" class="col-start-2 col-end-4 m-col-start-2 m-col-end-7">
+                    <img src="images/dr-nut-winter-edition.png" alt="dr-nut-original">
+                </div>
+
+                <div class="product-info col-span-full m-col-start-7 m-col-end-12">
+                    <h2>Dr Nut Winter Edition</h2>
+                    <p>
+                        Limited edition for the winter. Our classic almond taste with a cold, sharp finish that hits different on frosty days. Stay refreshed, no matter the temperature.
+                    </p>
+                    <div id="nutri-facts3">
+                        <h3>Nutrition Facts</h3>
+        
+                        <ul class="nutri-info">
+                            <li class="border-line">
+                                <span>Amount</span>
+                                <span>% Daily Value</span>
+                            </li>
+                            <li class="border-line">
+                                <span>Calories: 150cal</span>
+                            </li>
+                            <li class="border-line">
+                                <span>Fat: 0g</span>
+                                <span>0%</span>
+                            </li>
+                            <li class="border-line">
+                                <span>Sodium: 55mg</span>
+                                <span>2%</span>
+                            </li>
+                            <li class="border-line">
+                                <span>Total Carbohydrates: 40g</span>
+                                <span>14%</span>
+                            </li>
+                            <li class="border-line">
+                                <span>Sugar: 39g</span>
+                            </li>
+                            <li class="border-line">
+                                <span>Protein: 0g</span>
+                            </li>
+                        </ul>
+
+                        <p class="border-line">Ingredients: Carbonated Water, Sugar, Almond Concentrate, Caffeine, Sodium Benzoate, Citric Acid and Almond Extract.</p>
+
+                    </div>
+                    <a href="#" class="buy-now-btn">Buy Now</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+     <footer id="footer" >
+        <div class="grid-con center-grid-con">
+            <div id="footer-logo" class="col-start-1 col-end-3 m-col-start-2 m-col-end-4">
+                <img src="images/logo-white.svg" alt="Dr Nut Logo">
+            </div>
+            <div id="footer-social" class="col-start-3 col-end-5 m-col-start-10 m-col-end-12">
+                <a href="#">
+                    <img src="images/facebook-logo.svg">
+                </a>
+                 <a href="#">
+                    <img src="images/instagram-logo.svg">
+                </a> 
+                <a href="#">
+                    <img src="images/youtube-logo.svg">
+                </a>
+            </div>
+            
+            <nav class="col-start-1 col-end-3 m-col-start-4 m-col-end-6">
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <nav class="col-start-3 col-end-5 m-col-start-8 m-col-end-10">
+                <ul>
+                    <li><a href="merch.html">Merch</a></li>
+                    <li><a href="#">Athletes</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </nav>
+
+            <div id="footer-privacy" class="col-span-full">
+                <hr>
+                <p>&copy; 2026 Dr Nut. All Rights Reserved.</p>
+            </div>
+        </div>
+            
+    </footer>
+
+    <script src="js/main.js"></script>
+
 </body>
 </html>
