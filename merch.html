@@ -2,10 +2,142 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- in mobile set initial zoom level of page to 100%, set site size to equal device size-->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="css/grid.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+    <title>Dr Nut</title>
 </head>
 <body>
-    
+    <h1 class="visually-hidden">Dr Nut Merch</h1>
+    <div id="sticky-nav-con">
+    <header >
+        <div class="grid-con center-grid-con">
+            <nav id="main-nav" class="col-span-full m-col-start-7 m-col-end-12">
+            <h2 class="visually-hidden">Main Navigation</h2>
+                <button id="button"></button>
+                <div id="burger-con">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="merch.html">Merch</a></li>
+                        <li><a href="#">About</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="logo" class=" col-start-2 col-end-4 m-col-start-2 m-col-end-4">
+                <img src="images/logo-white.svg" alt="Dr Nut Logo">
+            </div>
+        </div>
+    </header>
+    </div>
+
+    <main>
+        <section id="merch-hero">
+            <div class="grid-con center-grid-con">
+                <h2 class="visually-hidden">Dr Nut Merch</h2>
+                <div id="hero-image" class="col-span-full">
+                    <picture>
+                        <source srcset="images/hero-merch-l.jpg" media="(min-width: 1200px)">
+                        <source srcset="images/hero-merch-m.jpg" media="(min-width: 768px)">
+                        <img src="images/hero-merch-s.jpg" alt="People drinking Dr Nut">
+                    </picture>
+                </div>
+            </div>
+        </section>
+
+        <section id="merch-products">
+            <div class="grid-con center-grid-con">
+                <h2 class="col-span-full">Featured Products</h2>
+                <section class="col-span-full m-col-start-1 m-col-end-5">
+                    <img src="images/hoodie.jpg" alt="Dr Nut Hoodie">
+                    <h3>Dr Nut Hoodie</h3>
+                    <p>$129.00</p>
+                </section>
+
+                <section class="col-span-full m-col-start-5 m-col-end-9">
+                    <img src="images/T-Shirt.jpg" alt="Dr Nut T-Shirt">
+                    <h3>Dr Nut Shirt</h3>
+                    <p>$49.00</p>
+                </section>
+
+                <section class="col-span-full m-col-start-9 m-col-end-13">
+                    <img src="images/beanie.jpg" alt="Dr Nut Beanie">
+                    <h3>Dr Nut Hat</h3>
+                    <p>$9.00</p>
+                </section>
+                <a href="merch.html" id="shop-all-btn" class="col-span-full">Shop All Products</a>
+            </div>
+        </section>  
+        
+        <section id="newsletter" >
+            <div class="grid-con center-grid-con">
+                <h2 class="col-span-full"> Dr Nut Newsletter</h2>
+                <div class="col-span-full">
+                    <p>Be part of the Dr Nut crew and be the first to know about new flavor drops, upcoming events, exclusive promotions, and limited edition merch.</p>
+                </div>
+                <div id="contact-hero-form" class="col-span-full l-col-start-1 l-col-end-12">
+                    <form action="email.php" method="POST" enctype="text/plain">
+                        <input name="fullName" type="text" placeholder="First & Last Name">
+                        <input name="email" type="text" required placeholder="Email Address">
+                        <input name="phone" type="text" required placeholder="Phone Number">
+                        <input name="submit" type="submit" value="Subscribe">
+                    </form>
+                </div>
+            </div>
+        </section>
+              
+    </main>
+
+
+    <footer id="footer" >
+        <div class="grid-con center-grid-con">
+            <div id="footer-logo" class="col-start-1 col-end-3 m-col-start-2 m-col-end-4">
+                <img src="images/logo-white.svg" alt="Dr Nut Logo">
+            </div>
+            <div id="footer-social" class="col-start-3 col-end-5 m-col-start-10 m-col-end-12">
+                <a href="#">
+                    <img src="images/facebook-logo.svg">
+                </a>
+                 <a href="#">
+                    <img src="images/instagram-logo.svg">
+                </a> 
+                <a href="#">
+                    <img src="images/youtube-logo.svg">
+                </a>
+            </div>
+            
+            <nav class="col-start-1 col-end-3 m-col-start-4 m-col-end-6">
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+            <nav class="col-start-3 col-end-5 m-col-start-8 m-col-end-10">
+                <ul>
+                    <li><a href="merch.html">Merch</a></li>
+                    <li><a href="#">Athletes</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                </ul>
+            </nav>
+
+            <div id="footer-privacy" class="col-span-full">
+                <hr>
+                <p>&copy; 2026 Dr Nut. All Rights Reserved.</p>
+            </div>
+        </div>
+            
+    </footer>
+
+
+        <script src="js/main.js"></script>
+
+
 </body>
 </html>
