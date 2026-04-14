@@ -3,7 +3,16 @@
 
     1. General STyles
     2. Main Nav
-
+    3. Main Hero Image
+    4. Products
+    5. Merch
+    6. About Us
+    7. Newsletter
+    8. Footer
+    9. Products Page
+    10. Merch Page
+    11. Tablet Sized Screens
+    12. Desktop Sized Screens
 
 */
 
@@ -663,7 +672,7 @@ footer {
 }
 
 
-/* 10. ---Desktop Sized Screens--- */
+/* 12. ---Desktop Sized Screens--- */
 
 @media screen and (min-width: 1200px) {
    

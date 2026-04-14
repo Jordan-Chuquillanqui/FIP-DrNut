@@ -52,15 +52,22 @@
                     <h2 class="col-span-full">Dr Nut Drinks</h2>
                     <section class="box col-span-full m-col-start-1 m-col-end-5">
                         <h3>Dr Nut<br>Original</h3>
-                        <img src="images/dr-nut-original.png" alt="dr-nut-original">
+                        <a href="#lightbox" data-drink-index="0">
+                            <img src="images/dr-nut-original.png" alt="dr-nut-original">
+                        </a>
                     </section>
                     <section class="box col-span-full m-col-start-5 m-col-end-9">
                         <h3>Dr Nut<br>Sugarfree</h3>
-                        <img src="images/dr-nut-sugarfree.png" alt="dr-nut-sugarfree">
+                        <a href="#lightbox" data-drink-index="1">
+                            <img src="images/dr-nut-sugarfree.png" alt="dr-nut-sugarfree">
+                        </a>
+                        
                     </section>
                     <section class="box col-span-full m-col-start-9 m-col-end-13">
                         <h3>Dr Nut<br>Winter Edition</h3>
-                        <img src="images/dr-nut-winter-edition.png" alt="dr-nut-winter">
+                        <a href="#lightbox" data-drink-index="2">
+                            <img src="images/dr-nut-winter-edition.png" alt="dr-nut-winter">
+                        </a>
                     </section>
                     <a href="products.html" id="view-all-btn" class="col-span-full m-col-start-10 m-col-end-13">view all</a>
                 </div>
@@ -70,19 +77,19 @@
                 <div class="grid-con center-grid-con">
                     <h2 class="col-span-full">Dr Nut Merch</h2>
                     <section class="col-span-full m-col-start-1 m-col-end-5">
-                        <img src="images/hoodie.jpg">
+                        <img src="images/hoodie.jpg" alt="hoodie">
                         <h3>Dr Nut Hoodie</h3>
                         <p>$129.00</p>
                     </section>
 
                     <section class="col-span-full m-col-start-5 m-col-end-9">
-                        <img src="images/T-Shirt.jpg">
+                        <img src="images/T-Shirt.jpg" alt="t-shirt">
                         <h3>Dr Nut T-Shirt</h3>
                         <p>$49.00</p>
                     </section>
 
                     <section class="col-span-full m-col-start-9 m-col-end-13">
-                        <img src="images/beanie.jpg">
+                        <img src="images/beanie.jpg" alt="beanie">
                         <h3>Dr Nut Beanie</h3>
                         <p>$9.00</p>
                     </section>
@@ -93,7 +100,7 @@
             <section id="about">
                 <div class="grid-con center-grid-con">
                     <h2 class="col-span-full"> About Dr Nut</h2>
-                    <img src="images/about-dr-nut.jpg" class="col-span-full m-col-start-1 m-col-end-7" >
+                    <img src="images/about-dr-nut.jpg" alt="history of dr nut" class="col-span-full m-col-start-1 m-col-end-7" >
                     <div id="about-text-box" class="col-span-full m-col-start-7 m-col-end-13 l-col-start-8 l-col-end-12">
                         <p>Dr. Nut is more than just a drink; it's a New Orleans legend. Originally crafted in the early 20th century, our signature almond-flavored soda became a cultural icon known for its unique taste and its famous squirrel mascot. After decades of refreshing generations, the legend is back to bring that classic, intense almond flavor to a new era of energy and refreshment.</p>
                     <a href="#" id="about-btn">more about us</a>
@@ -127,13 +134,13 @@
                 </div>
                 <div id="footer-social" class="col-start-3 col-end-5 m-col-start-10 m-col-end-12">
                     <a href="#">
-                        <img src="images/facebook-logo.svg">
+                        <img src="images/facebook-logo.svg" alt="facebook-logo">
                     </a>
                      <a href="#">
-                        <img src="images/instagram-logo.svg">
+                        <img src="images/instagram-logo.svg" alt="instagram-logo">
                     </a> 
                     <a href="#">
-                        <img src="images/youtube-logo.svg">
+                        <img src="images/youtube-logo.svg" alt="youtube-logo">
                     </a>
                 </div>
             
@@ -162,6 +169,14 @@
             
         </footer>
 
+
+        <section class="lightbox hidden" id="lightbox">
+            <h2 class="hidden">Lightbox</h2>
+            <a href="#" class="lightbox_close">x</a>
+            <article>
+                <h3 class="lb_heading">Dr Nut Flavor</h3>
+            </article>
+        </section>
 
         <script src="js/main.js"></script>
 </body>
